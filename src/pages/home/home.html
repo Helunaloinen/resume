@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Welcome!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
+<!--
+  Virve Liimatta 1601471
+  I added some text and two buttons, one for registering and one for logging in.
+-->
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h1>This application is a resume for Virve Liimatta.</h1> 
+  
+  <p>You can can log in or create an account by registering to the app.</p>
+
+  <button round large ion-button (click)="doLogin()">Login</button> <button round large ion-button (click)="createAccount()">Register</button>
+ 
 </ion-content>

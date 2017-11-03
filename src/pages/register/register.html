@@ -1,0 +1,35 @@
+<!--
+  Virve Liimatta 1601471
+  Added form for registering
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register to Virve's resume app</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Here you can register yourself as a user of Virve's Resume App. Please fill the form properly.</p>
+    <form (ngSubmit)="registerUser()" #registerForm="ngForm">
+        <ion-row>
+          <ion-col>
+            <ion-list inset>
+              <ion-item>
+                <ion-icon name="mail" item-start></ion-icon><ion-input type="text" placeholder="Email" name="email" #email required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="lock" item-start></ion-icon><ion-input type="password" placeholder="Password" name="password" #password required></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="signup-col">
+            <button round large ion-button class="submit-btn" large type="submit" [disabled]="!registerForm.form.valid">Register</button>
+          </ion-col>
+        </ion-row>
+      </form>
+</ion-content>

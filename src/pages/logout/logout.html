@@ -1,0 +1,24 @@
+<!--
+  Virve Liimatta 1601471
+  Added menu toggle to page
+
+-->
+<ion-header>
+    
+      <ion-navbar>
+          <ion-buttons start>
+              <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+              </button>
+            </ion-buttons>
+    <ion-title>Logging out of Virve's Resume App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Here you can logout of the app.<br>
+  Thank you for reviewing my app!</p>
+  <ion-icon name="log-out" style="font-size:50px" (click)="logout()"></ion-icon>
+</ion-content>
