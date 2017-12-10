@@ -1,3 +1,28 @@
 page-login {
+        //Background image
+    .bg-image {
+        background-image: url('../assets/imgs/tausta.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        }
+        // Fixing the page with no scroll
+        .no-scroll .scroll-content {
+        overflow: hidden;
+        }
+        // centering content
+        .text {
+            text-align: center;
+        }
+        // styling the form
+        ion-list {
+            background-color: #bebebe;
+            padding: 10px;
+            border: 1px solid;
+        }
+        ion-input {
+            background-color: #bebebe;
+            padding: 5px;
+        }
 
 }

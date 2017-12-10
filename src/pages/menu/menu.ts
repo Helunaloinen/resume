@@ -5,6 +5,8 @@ import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
  * Virve Liimatta 1601471
  * Added modules ViewChild, Nav
  * Exported interface, which is needed to create menu. As well as page list.
+ * 
+ * Changed education to skills and added all to tabs
  */
 
 export interface PageInterface {
@@ -27,11 +29,11 @@ export class MenuPage {
 
   pages: PageInterface[] = [
     { title: 'About', pageName: 'TabsPage', tabComponent: 'AboutPage', index: 0, icon: 'help-circle'},
-    { title: 'Education', pageName: 'ExtraPage', icon: 'school'},
-    { title: 'CV', pageName: 'TabsPage', tabComponent: 'CvPage', index: 1, icon: 'list-box'},
-    { title: 'Projects', pageName: 'ProjectsPage', icon: 'attach'},
-    { title: 'Contact', pageName: 'TabsPage', tabComponent: 'ContactPage', index: 2, icon: 'at'},
-    { title: 'Log out', pageName: 'LogoutPage', icon: 'log-out'},
+    { title: 'Skills', pageName: 'TabsPage', tabComponent: 'ExtraPage', index: 1, icon: 'school'},
+    { title: 'CV', pageName: 'TabsPage', tabComponent: 'CvPage', index: 2, icon: 'list-box'},
+    { title: 'Projects', pageName: 'TabsPage', tabComponent: 'ProjectsPage', index: 3, icon: 'attach'},
+    { title: 'Contact', pageName: 'TabsPage', tabComponent: 'ContactPage', index: 4, icon: 'at'},
+    { title: 'Log out', pageName: 'TabsPage', tabComponent: 'LogoutPage', index: 5, icon: 'log-out'},
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

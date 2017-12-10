@@ -2,6 +2,9 @@
   Virve Liimatta 1601471
   Added menu toggle to page
   Added info and picture
+
+  Second edit: added background picture and aligned content.
+  Removed the card from image because it was messing with the image size.
 -->
 <ion-header>
 
@@ -17,22 +20,12 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="bg-image no-scroll" padding>
+    <div  class="text">
 
+      <img width="200" height="255" src="../assets/imgs/mie.jpg"> 
+      
     <ion-card>
-        
-          <ion-card-header>
-            <b>Virve Liimatta</b>
-          </ion-card-header>
-        
-          <ion-card-content>
-            <img width="250" height="319" src="../assets/imgs/mie.jpg"> 
-          </ion-card-content>
-        
-        </ion-card>
-
-  <ion-card>
-    
       <ion-card-header>
         Stats
       </ion-card-header>
@@ -47,4 +40,7 @@
       </ion-card-content>
     
     </ion-card>
+
+    <p>Read more about me by clicking the menu!</p>
+    </div>
 </ion-content>

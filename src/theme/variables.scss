@@ -22,7 +22,9 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-$background-color: #6e6e6e;
+// changed the background color, because I think it is too dark.
+
+$background-color: #bebebe;
 $toolbar-background: #000000;
 $tabs-md-background: #000000;
 
@@ -35,7 +37,7 @@ $tabs-md-background: #000000;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #373737,
+  primary:    #bebebe,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,

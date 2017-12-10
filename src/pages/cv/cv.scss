@@ -1,3 +1,14 @@
-page-cv {
+page-cv { 
+           //Background image
+    .bg-image {
+        background-image: url('../assets/imgs/tausta.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        }
+     // centering content
+        .text {
+            text-align: center;
+        }
 
 }

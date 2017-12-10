@@ -1,6 +1,8 @@
 <!--
   Virve Liimatta 1601471
   Added form for registering
+
+  Second edit: added background picture and aligned content and styled the form.
 -->
 <ion-header>
 
@@ -11,8 +13,9 @@
 </ion-header>
 
 
-<ion-content padding>
-  <p>Here you can register yourself as a user of Virve's Resume App. Please fill the form properly.</p>
+<ion-content class="bg-image no-scroll" padding>
+    <div  class="text">
+  <p>Here you can register yourself as a user of Virve's Resume App. Please fill the form properly, working e-mail and password of the length of at least six characters required.</p>
     <form (ngSubmit)="registerUser()" #registerForm="ngForm">
         <ion-row>
           <ion-col>
@@ -32,4 +35,5 @@
           </ion-col>
         </ion-row>
       </form>
+    </div>
 </ion-content>

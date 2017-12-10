@@ -2,6 +2,8 @@
 Virve Liimatta 1601471
 I added new title for the page and a form that can be used to sign in
 There is a function called signInUser() which has to be added to login.ts
+
+Second edit: added background picture and aligned content and styled the form.
 -->
 <ion-header>
 
@@ -11,7 +13,8 @@ There is a function called signInUser() which has to be added to login.ts
 
 </ion-header>
 
-<ion-content padding>
+<ion-content class="bg-image no-scroll" padding>
+    <div  class="text">
     <p>You have to registered to see the content of Virve's Resume App. You can register from the link in the previous page.</p>
   <form (ngSubmit)="signInUser()" #registerForm="ngForm">
        <ion-row>
@@ -32,4 +35,5 @@ There is a function called signInUser() which has to be added to login.ts
           </ion-col>
         </ion-row>
       </form>
+    </div>
 </ion-content>

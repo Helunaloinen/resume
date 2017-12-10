@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <ion-title id="eri">
       Welcome!
     </ion-title>
   </ion-navbar>
@@ -9,13 +9,19 @@
 <!--
   Virve Liimatta 1601471
   I added some text and two buttons, one for registering and one for logging in.
+
+  Second edit: Added a picture and aligned all at center.
 -->
 
-<ion-content padding>
-  <h1>This application is a resume for Virve Liimatta.</h1> 
+<ion-content class="bg-image no-scroll" padding>
+  <div  class="text">
+  <h1><br>This mobile app is<br>a resume for<br>Virve Liimatta.</h1> 
+
+  <img width="300" height="199" src="../assets/imgs/kuva1.jpg"> 
   
   <p>You can can log in or create an account by registering to the app.</p>
 
   <button round large ion-button (click)="doLogin()">Login</button> <button round large ion-button (click)="createAccount()">Register</button>
+  </div>
  
 </ion-content>

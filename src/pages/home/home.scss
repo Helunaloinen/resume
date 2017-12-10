@@ -1,3 +1,20 @@
 page-home {
+        //Background image of the login screen
+        .bg-image {
+            background-image: url('../assets/imgs/tausta.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            }
+            // Fixing the page with no scroll
+            .no-scroll .scroll-content {
+            overflow: hidden;
+            }
+            .text {
+                text-align: center;
+            }
+            #eri {
+                font-family: Amatic;
+            }
 
 }
